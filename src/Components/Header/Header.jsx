@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import "./Header.css"
 import { Link } from 'react-router-dom'
-import ProductSearch from 'src/Components/ProductSearch/ProductSearch.jsx'
-import IconUser from 'src/Components/IconUser/IconUser.jsx'
+import ProductSearch from "../ProductSearch/ProductSearch"
+import IconUser from '../IconUser/IconUser'
 
 const Header = ({products, isOpen, onClose}) => {
 
