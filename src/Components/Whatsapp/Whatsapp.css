@@ -1,0 +1,25 @@
+.burbuja-whatsapp {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    z-index: 1000; 
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.burbuja-whatsapp i {
+    font-size: 45px;
+    color: #25D366;
+}
+
+.burbuja-whatsapp:hover{
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}

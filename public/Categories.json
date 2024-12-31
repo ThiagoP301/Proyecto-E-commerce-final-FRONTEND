@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Motor",
+      "image": "motor.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Suspensión",
+      "image": "suspension.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Frenos",
+      "image": "brakes.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Butacas",
+      "image": "butacas.png"
+    },
+    {
+      "id": 5,
+      "name": "Accesorios",
+      "image": "accesorios.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Escape",
+      "image": "escape.jpg"
+    }
+  ]
+  

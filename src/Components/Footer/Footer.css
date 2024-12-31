@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.container-footer{
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 350px;
+    background-color: #191919;
+    color: white;
+    gap: 40px;
+}
+
+.elements-footer{
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.container-footer span{
+    font-size: 14px;
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.container-footer h3{
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.contact-footer{
+display: flex;
+flex-direction: column;
+
+}
+
+.contact-footer p{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.logo-footer{
+    color: #a00000;
+    background-color: #0D0D0D;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    display: flex;
+    font-size: 28px;
+    font-family: "Bebas Neue", sans-serif;
+    padding-left: 300px;
+    gap: 20px;
+  }
+
+  .logo-footer span{
+    color: #ffffff;
+  }
+
+  .logo-footer p{
+    font-size: 22px;
+    font-weight: 100;
+    color: #494949;
+  }
+
+  .categories-footer{
+    width: 100%;
+    max-width: 1500px;
+  }
+
+  @media (max-width : 670px){
+    .container-footer{
+        height: auto;
+        padding: 30px;
+    }
+
+    .elements-footer{
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-footer p{
+        align-items: center;
+        text-align: center;
+   }
+
+   .categories-footer{
+    width: 100%;
+    height: 190px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid white;
+   }
+
+   .categories-footer span{
+    justify-content: center;
+   }
+
+   .logo-footer{
+    padding: 30px;
+   }
+  }
+
+  @media(max-width : 350px){
+    .logo-footer{
+        font-size: 23px;
+    }
+  }
