@@ -6,20 +6,19 @@ import { addToCart, getCart, removeFromCart } from '../../api/cart'
 const ProductCard = ({ product }) => {
   const [inCart, setInCart] = useState(false);
 
-  // Sincroniza el estado `inCart` al montar el componente
   useEffect(() => {
     const checkCart = async () => {
       try {
         const cart = await getCart()
         const productInCart = cart.some((item) => item.productId === product._id)
         setInCart(productInCart)
+        return
       } catch (error) {
         console.error('Error al verificar el carrito', error);
       }
     };
-
     checkCart();
-  }, [product._id]);
+  }, []);
 
   const toggleCart = async () => {
     try {
