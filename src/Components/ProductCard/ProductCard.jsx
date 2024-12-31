@@ -9,12 +9,18 @@ const ProductCard = ({ product }) => {
     const checkCart = async () => {
       try {
         const cart = await getCart()
-        const productInCart = cart.some((item) => item.productId === product._id)
-        setInCart(productInCart)
+        if (Array.isArray(cart)) {
+          const productInCart = cart.some((item) => item.productId === product._id);
+          setInCart(productInCart);
+        } else {
+          console.error("El carrito no es un arreglo válido");
+          setInCart(false)
+        }
       } catch (error) {
         console.error('Error al verificar el carrito', error);
+        setInCart(false)
       }
-    };
+    }
 
     useEffect(() =>{
       checkCart()
