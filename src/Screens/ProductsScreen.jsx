@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ProductCard from '../Components/ProductCard/ProductCard'
 import "./ProductsScreen.css"
 import { Link } from 'react-router-dom'
-import Footer from '../Components/Footer/Footer'
 
 
 

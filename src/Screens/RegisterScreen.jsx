@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./LoginScreen.css"
 import useForm from '../hooks/useForm'
-import { Link, useNavigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
 import ENVIROMENT from '../config/enviroment'
 
 

@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react"
-import { BrowserRouter, Route, Router, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import HomeScreen from "./Screens/HomeScreen"
 import LoginScreen from "./Screens/LoginScreen"
 import RegisterScreen from "./Screens/RegisterScreen"
@@ -11,7 +11,6 @@ import ProductsScreen from "./Screens/ProductsScreen"
 import ProductsCategory from "./Screens/ProductsCategory"
 import ProductIDScreen from "./Screens/ProductIDScreen"
 import Footer from "./Components/Footer/Footer"
-import CategorySlider from "./Components/CategorySlider/CategorySlider"
 import Whatsapp from "./Components/Whatsapp/Whatsapp"
 import "./App.css"
 import ScrollToTop from "./Components/ScrollToTop/ScrollToTop"
@@ -23,7 +22,6 @@ import ENVIROMENT from "./config/enviroment"
 
 function App() {
 
-  const [isLoading, setIsLoading] = useState(true);
   const [products, setProductos] = useState([]);
 
   useEffect(() =>{

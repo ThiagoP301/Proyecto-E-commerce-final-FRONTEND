@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import ProductSearch from "../ProductSearch/ProductSearch"
 import IconUser from '../IconUser/IconUser'
 
-const Header = ({products, isOpen, onClose}) => {
+const Header = ({products}) => {
 
 const [user, setUser]= useState(null)
 const [isModalOpen, setIsModalOpen] = useState(false)
