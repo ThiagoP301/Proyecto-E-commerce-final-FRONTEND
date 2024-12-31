@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './ProductCard.css'
 import { Link } from 'react-router-dom'
-import { addToCart, getCart, removeFromCart } from '../../api/cart'
+import { addToCart, removeFromCart } from '../../api/cart'
 
 const ProductCard = ({ product }) => {
   const [inCart, setInCart] = useState(false);
@@ -14,12 +14,12 @@ const ProductCard = ({ product }) => {
         navigate("/login");
         return;
       }
-      if (inCart) {
+      if (!inCart) {  
+        await addToCart(product._id)
+        setInCart(true)
+      } else {
         await removeFromCart(product._id)
         setInCart(false)
-      } else {
-        await addToCart(product._id, 1)
-        setInCart(true)
       }
     } catch (error) {
       console.error('Error al agregar o eliminar el producto del carrito', error)
