@@ -1,13 +1,10 @@
 import React from 'react'
-import ProductsScreen from './ProductsScreen'
-import NavBar from '../Components/Header/Header'
 import CategorySlider from '../Components/CategorySlider/CategorySlider'
 import "./HomeScreen.css"
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
 import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css/pagination'
-import Footer from '../Components/Footer/Footer'
 import InfoComponents from '../Components/InfoComponents/InfoComponents'
 import ProductosDestacados from '../Components/ProductosDestacados/ProductosDestacados'
 import { Link } from 'react-router-dom'
