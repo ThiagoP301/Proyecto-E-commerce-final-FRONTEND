@@ -24,7 +24,7 @@ const ProductCard = ({ product }) => {
 
     useEffect(() =>{
       checkCart()
-    }, [])
+    }, [toggleCart])
 
 
   const toggleCart = async () => {
