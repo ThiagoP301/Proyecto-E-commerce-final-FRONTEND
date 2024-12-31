@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
         return;
       }
       if (!inCart) {  
-        await addToCart(product._id)
+        await addToCart(product._id, 1)
         setInCart(true)
       } else {
         await removeFromCart(product._id)
