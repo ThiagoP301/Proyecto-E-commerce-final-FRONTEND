@@ -6,27 +6,6 @@ import { addToCart, getCart, removeFromCart } from '../../api/cart'
 const ProductCard = ({ product }) => {
   const [inCart, setInCart] = useState(false);
 
-    const checkCart = async () => {
-      try {
-        const cart = await getCart()
-        if (Array.isArray(cart)) {
-          const productInCart = cart.some((item) => item.productId === product._id);
-          setInCart(productInCart);
-        } else {
-          console.error("El carrito no es un arreglo válido");
-          setInCart(false)
-        }
-      } catch (error) {
-        console.error('Error al verificar el carrito', error);
-        setInCart(false)
-      }
-    }
-
-    useEffect(() =>{
-      checkCart()
-    }, [product._id])
-
-
   const toggleCart = async () => {
     try {
       const isLoggedIn = sessionStorage.getItem("access-token") ? true : false
