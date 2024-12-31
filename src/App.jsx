@@ -23,11 +23,12 @@ import ENVIROMENT from "./config/enviroment"
 function App() {
 
   const [products, setProductos] = useState([]);
+  const VITE_URL = ENVIROMENT.URL_VITE
 
   useEffect(() =>{
     const fetchProducts = async() =>{
       try {
-        const response = await axios.get(ENVIROMENT.URL_VITE +"/api/products",)
+        const response = await axios.get( `${VITE_URL}/api/products`,)
         console.log("Este es el listado de productos", response.data)
         return setProductos(response.data)
       } catch (error) {
