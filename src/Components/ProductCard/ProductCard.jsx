@@ -23,6 +23,12 @@ const ProductCard = ({ product }) => {
 
   const toggleCart = async () => {
     try {
+      const isLoggedIn = sessionStorage.getItem("access-token") ? true : false
+      if (!isLoggedIn) {
+        alert("¡Debes iniciar sesión para agregar productos al carrito!");
+        navigate("/login");
+        return;
+      }
       if (inCart) {
         await removeFromCart(product._id)
         setInCart(false)
