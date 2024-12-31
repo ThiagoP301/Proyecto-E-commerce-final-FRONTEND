@@ -20,10 +20,10 @@ const HomeScreen = ({categories, products}) => {
         pagination={{ clickable: true }} 
       >
           <SwiperSlide>
-          <img src="src\assets\images\portada1.jpg" alt="" />
+          <img src="/assets/images/portada1.jpg" alt="" />
           </SwiperSlide>
           <SwiperSlide>
-          <img src="src\assets\images\portada2.jpg" alt="" />
+          <img src="/assets/images/portada2.jpg" alt="" />
           </SwiperSlide>
       </Swiper>
       </div>

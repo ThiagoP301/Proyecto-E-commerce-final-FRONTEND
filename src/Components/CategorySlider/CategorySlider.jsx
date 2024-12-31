@@ -36,7 +36,7 @@ const CategorySlider = ({categories}) => {
                 <SwiperSlide key={category.id}>
                     <Link to= {`/products/${category.name.toLowerCase()}`}>
                     <div className= "categories">
-                        <img src={`/src/assets/images/${category.image}`} alt="" />
+                        <img src={`/assets/images/${category.image}`} alt="" />
                         <h3>{category.name}</h3>
                     </div> </Link>
                 </SwiperSlide>
