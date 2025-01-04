@@ -92,7 +92,7 @@ const [errorState, setErrorState] =  useState({
       </div>
       <div className='register-login-form'>
         <label htmlFor="contraseña">Ingrese su contraseña</label>
-        <input className='register-login-input' type="contraseña" name="contraseña" id="contraseña" placeholder="Contraseña" onChange={handleChange} value={formState.contraseña} />
+        <input className='register-login-input' type="password" name="contraseña" id="contraseña" placeholder="Contraseña" onChange={handleChange} value={formState.contraseña} />
         {errorState.contraseña.length > 0 && (
           <div className='validacion-form'>
             {errorState.contraseña.map((error, index) => (
