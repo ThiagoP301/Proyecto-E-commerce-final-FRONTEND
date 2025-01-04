@@ -9,7 +9,7 @@ const InfoComponents = () => {
   return (
     <div className="info-container">
       <div className="informacion">
-        <Swiper
+        <Swiper className='swiper-info'
           modules={[Pagination, Autoplay]}
           autoplay={{ delay: 10000 }}
           slidesPerView={1}
@@ -24,7 +24,7 @@ const InfoComponents = () => {
             }
           }}
         >
-          <SwiperSlide>
+          <SwiperSlide className='swiper-info' >
             <div className="info">
               <div className="icon-info">
                 <i className="bi bi-mailbox-flag"></i>
